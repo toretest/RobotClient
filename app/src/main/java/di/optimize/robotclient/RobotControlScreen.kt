@@ -14,6 +14,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.tooling.preview.Preview
 import kotlin.math.roundToInt
 
 @Composable
@@ -173,5 +174,13 @@ fun SteeringControl() {
                 Text("H")
             }
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun RobotControlScreenPreview() {
+    MaterialTheme {
+        RobotControlScreen()
     }
 }
